@@ -1,0 +1,252 @@
+/*width: 100%;*/
+/*margin: auto;*/
+/*margin-top: 150px;*/
+body {
+    background: #f0f0f0;
+
+
+}
+
+html * {
+    font-family: Arial, Helvetica, sans-serif;
+
+}
+
+h2 {
+    color: #00ace0;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+}
+
+a:hover {
+    color: darkblue;
+}
+
+ul {
+    list-style-type: none;
+    color: #14b1d9;
+}
+
+h1, h2, h3, h4, h5 {
+    color: #5c5b5b;
+}
+
+
+button {
+    background-color: #14b1d9;
+    color: white;
+    font-weight: bolder;
+    font-size: 1rem;
+    border-radius: 5px;
+    border: #02596a;
+    margin-top: 30px;
+    height: 50px;
+}
+
+button:hover {
+    background-color: #03576c;
+}
+
+input {
+    margin: 5px;
+    border-radius: 5px;
+    border: 1px solid #bbb8b8;
+    text-align: center;
+}
+
+
+a.post-link {
+
+    display: inline-grid;
+    width: 50%;
+    background-color: #14b1d9;
+    text-align: center;
+    line-height: 1.0rem;
+    border: 10px solid #14b1d9;
+    padding: 4px 8px 4px 8px;
+    border-radius: 10px;
+
+}
+
+a.post-link:after {
+    content: "Read more";
+}
+
+a.post-link:hover {
+    background-color: #03576c;
+    color: white;
+
+}
+input{
+    height: 50px;
+}
+
+hr.title {
+    border-top: 6px solid #f0f0f0;
+
+}
+
+.container {
+    display: grid;
+    height: auto;
+    grid-template-columns: 850px;
+    grid-template-rows: 250px 250px 1fr;
+    grid-template-areas:
+    "hd"
+    "sd"
+    "main"
+    "ft";
+    grid-auto-rows: minmax(100px, auto);
+    grid-gap: 10px;
+    background: #f0f0f0;
+
+
+}
+
+.box {
+    background: white;
+    border-radius: 10px;
+    box-shadow: 2px 2px #e0dfdf;
+    padding: 10px 10px 55px;
+    margin-bottom: 10px;
+
+}
+
+.header {
+    grid-area: hd;
+
+    /*background-color: grey;*/
+
+}
+.header-img {
+
+    border-radius: 10px;
+    margin-right: 100px;
+    box-shadow: 0px 20px 12px 20px #e0dfdf;
+    max-width: 2000px;
+}
+.content {
+    grid-area: main;
+    height: auto;
+
+    /*overflow: auto;*/
+
+
+    /*background-image: url('../img/wp2555019.jpg');*/
+    /*background-size: contain;*/
+    /*background-repeat: no-repeat;*/
+}
+
+.footer {
+    grid-area: ft;
+    background-color: dimgray;
+    color: white;
+    text-align: center;
+
+}
+
+
+.sidebar-links {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: #14b1d9;
+
+}
+
+.sidebar {
+    grid-area: sd;
+    background: #f0f0f0;
+    padding: 10px 10px;
+
+}
+
+.menu {
+    background: white;
+    height: calc(100% - 300px);
+    max-height: 990px;
+}
+
+.subscribe {
+    background: white;
+    max-height: 150px;
+    padding: 10px 10px 75px;
+    margin-bottom: 10px;
+    display: grid;
+
+
+}
+
+
+
+.post-card {
+    background-color: #d0caca;
+    height: auto;
+    width: 250px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 5px #e0dfdf;
+}
+
+.post-img {
+    height: 150px;
+    width: 250px;
+
+}
+
+.posts {
+    display: flex;
+    grid-gap: 15px;
+    /*align-content: flex-start;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    size: auto;
+
+}
+
+
+/* medium screens */
+@media (min-width: 600px) and (max-width: 1100px) {
+
+    .container {
+        width: 95vw;
+        grid-template-columns: 300px 300px 300px;
+        grid-template-rows: auto;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "sd main main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        border: 5px solid aquamarine;
+    }
+
+    .menu {
+        height: calc(100% - 300px);
+        background: white;
+        padding: 10px 10px 55px;
+        margin-bottom: 10px;
+        box-shadow: 2px 2px #e0dfdf;
+    }
+
+}
+
+/* large screens */
+@media (min-width: 1101px) {
+    .container {
+        display: grid;
+        width: 95vw;
+        grid-template-columns: 30px repeat(7, 1fr);
+        grid-template-rows: auto;
+        grid-template-areas:
+            "hd hd hd hd hd hd hd hd"
+            "sd sd main main main main main main"
+            "ft ft ft ft ft ft ft ft";
+        /*border: 5px solid red;*/
+    }
+
+
+}
