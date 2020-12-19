@@ -1,6 +1,5 @@
-/*width: 100%;*/
-/*margin: auto;*/
-/*margin-top: 150px;*/
+@import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@0;1&display=swap');
+
 body {
     background: #f0f0f0;
 
@@ -8,7 +7,8 @@ body {
 }
 
 html * {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: 'Andika New Basic', sans-serif;
+
 
 }
 
@@ -56,30 +56,34 @@ input {
     border: 1px solid #bbb8b8;
     text-align: center;
 }
-
-
-a.post-link {
-
-    display: inline-grid;
-    width: 50%;
-    background-color: #14b1d9;
-    text-align: center;
-    line-height: 1.0rem;
-    border: 10px solid #14b1d9;
-    padding: 4px 8px 4px 8px;
-    border-radius: 10px;
-
+figcaption{
+    font-style: oblique;
+    font-weight: bolder;
 }
 
-a.post-link:after {
-    content: "Read more";
-}
 
-a.post-link:hover {
-    background-color: #03576c;
-    color: white;
+/*a.post-link {*/
 
-}
+/*    display: inline-grid;*/
+/*    width: 50%;*/
+/*    background-color: #14b1d9;*/
+/*    text-align: center;*/
+/*    line-height: 1.0rem;*/
+/*    border: 10px solid #14b1d9;*/
+/*    padding: 4px 8px 4px 8px;*/
+/*    border-radius: 10px;*/
+
+/*}*/
+
+/*a.post-link:after {*/
+/*    content: "Read more";*/
+/*}*/
+
+/*a.post-link:hover {*/
+/*    background-color: #03576c;*/
+/*    color: white;*/
+
+/*}*/
 input{
     height: 50px;
 }
@@ -117,6 +121,10 @@ hr.title {
 
 .header {
     grid-area: hd;
+    background-image: url("../img/faisal-header.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    min-height: 400px;
 
     /*background-color: grey;*/
 
@@ -181,33 +189,7 @@ hr.title {
 
 
 
-.post-card {
-    background-color: #d0caca;
-    height: auto;
-    width: 250px;
-    padding-right: 5px;
-    padding-left: 5px;
-    padding-bottom: 10px;
-    text-align: center;
-    border-radius: 10px;
-    box-shadow: 3px 3px 5px 5px #e0dfdf;
-}
 
-.post-img {
-    height: 150px;
-    width: 250px;
-
-}
-
-.posts {
-    display: flex;
-    grid-gap: 15px;
-    /*align-content: flex-start;*/
-    flex-direction: row;
-    flex-wrap: wrap;
-    size: auto;
-
-}
 
 
 /* medium screens */

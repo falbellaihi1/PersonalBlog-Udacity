@@ -1,0 +1,51 @@
+@import "style.css";
+a.post-link {
+
+    display: inline-grid;
+    width: 50%;
+    background-color: #14b1d9;
+    text-align: center;
+    line-height: 1.0rem;
+    border: 10px solid #14b1d9;
+    padding: 4px 8px 4px 8px;
+    border-radius: 10px;
+
+}
+
+a.post-link:after {
+    content: "Read more";
+}
+
+a.post-link:hover {
+    background-color: #03576c;
+    color: white;
+
+}
+
+.post-card {
+    background-color: #d0caca;
+    height: auto;
+    width: 250px;
+    padding-right: 5px;
+    padding-left: 5px;
+    padding-bottom: 10px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 3px 3px 5px 5px #e0dfdf;
+}
+
+.post-img {
+    height: 150px;
+    width: 250px;
+
+}
+
+.posts {
+    display: flex;
+    grid-gap: 15px;
+    /*align-content: flex-start;*/
+    flex-direction: row;
+    flex-wrap: wrap;
+    size: auto;
+
+}
