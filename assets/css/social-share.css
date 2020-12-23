@@ -1,0 +1,27 @@
+.social-container {
+    display: grid;
+    grid-gap: 5px;
+    width: auto;
+    max-height: 250px;
+    padding-left: 100px;
+    padding-right: 100px;
+    grid-template-rows: 80px;
+    grid-template-areas: "fb tw ln";
+    align-self: center;
+
+}
+
+.button-facebook {
+    grid-area: fb;
+
+}
+
+.button-twitter {
+    grid-area: tw;
+
+}
+
+.button-linkedin {
+    grid-area: ln;
+
+}

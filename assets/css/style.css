@@ -1,5 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Andika+New+Basic:ital@0;1&display=swap');
-
+@import "social-share.css";
+@import "author-card.css";
+@import "post.css";
 body {
     background: #f0f0f0;
 
@@ -43,7 +45,7 @@ button {
     border-radius: 5px;
     border: #02596a;
     margin-top: 30px;
-    height: 50px;
+
 }
 
 button:hover {
@@ -62,28 +64,6 @@ figcaption{
 }
 
 
-/*a.post-link {*/
-
-/*    display: inline-grid;*/
-/*    width: 50%;*/
-/*    background-color: #14b1d9;*/
-/*    text-align: center;*/
-/*    line-height: 1.0rem;*/
-/*    border: 10px solid #14b1d9;*/
-/*    padding: 4px 8px 4px 8px;*/
-/*    border-radius: 10px;*/
-
-/*}*/
-
-/*a.post-link:after {*/
-/*    content: "Read more";*/
-/*}*/
-
-/*a.post-link:hover {*/
-/*    background-color: #03576c;*/
-/*    color: white;*/
-
-/*}*/
 input{
     height: 50px;
 }
@@ -140,12 +120,6 @@ hr.title {
     grid-area: main;
     height: auto;
 
-    /*overflow: auto;*/
-
-
-    /*background-image: url('../img/wp2555019.jpg');*/
-    /*background-size: contain;*/
-    /*background-repeat: no-repeat;*/
 }
 
 .footer {
@@ -167,14 +141,14 @@ hr.title {
 .sidebar {
     grid-area: sd;
     background: #f0f0f0;
-    padding: 10px 10px;
+    padding: 5px 5px;
+
 
 }
 
 .menu {
     background: white;
     height: calc(100% - 300px);
-    max-height: 990px;
 }
 
 .subscribe {
@@ -203,7 +177,7 @@ hr.title {
             "hd hd hd hd hd hd hd hd"
             "sd main main main main main main main"
             "ft ft ft ft ft ft ft ft";
-        border: 5px solid aquamarine;
+
     }
 
     .menu {
@@ -227,7 +201,7 @@ hr.title {
             "hd hd hd hd hd hd hd hd"
             "sd sd main main main main main main"
             "ft ft ft ft ft ft ft ft";
-        /*border: 5px solid red;*/
+
     }
 
 

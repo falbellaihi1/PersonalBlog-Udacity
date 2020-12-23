@@ -1,0 +1,38 @@
+.author-card.box {
+    display: grid;
+    grid-template-columns: 150px auto;
+    grid-template-rows: auto;
+    grid-gap: 10px;
+    grid-template-areas:
+            "av as "
+            "na as";
+    background-color: #c4c4c4;
+
+}
+
+.avatar-area {
+    grid-area: av;
+    max-height: 150px;
+    max-width: 150px;
+
+
+
+}
+
+.avatar-img {
+    width: 150px;
+    height: 150px;
+}
+
+.name-area {
+    grid-area: na;
+
+
+
+}
+
+.author-summary {
+    grid-area: as;
+    width: auto;
+
+}
